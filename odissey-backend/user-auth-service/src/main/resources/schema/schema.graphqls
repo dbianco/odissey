@@ -1,3 +1,40 @@
 type Query {
     hello: String
+    user(id: ID!): User
+    users: [User!]!
+    login(email: String!, password: String!): AuthPayload
+}
+
+type Mutation {
+    register(input: UserInput!): AuthPayload
+    updateUser(id: ID!, input: UserUpdateInput!): User
+    deleteUser(id: ID!): Boolean
+}
+
+type User {
+    id: ID!
+    firstName: String!
+    lastName: String!
+    email: String!
+    createdAt: String!
+    updatedAt: String!
+}
+
+input UserInput {
+    firstName: String!
+    lastName: String!
+    email: String!
+    password: String!
+}
+
+input UserUpdateInput {
+    firstName: String
+    lastName: String
+    email: String
+    password: String
+}
+
+type AuthPayload {
+    token: String!
+    user: User!
 }
