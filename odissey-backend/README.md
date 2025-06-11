@@ -1,9 +1,9 @@
 # odissey-backend
 
-This directory contains the backend projects for the odissey application.
+Este directorio contiene los proyectos backend para la aplicación odissey.
 
-## Projects
+## Proyectos
 
-*   [api-gateway](api-gateway/): Description of the api-gateway project.
-*   [schema-registry](schema-registry/): Description of the schema-registry project.
-*   [user-auth-service](user-auth-service/): Description of the user-auth-service project.
+*   [api-gateway](api-gateway/): Descripción del proyecto api-gateway.
+*   [schema-registry](schema-registry/): Descripción del proyecto schema-registry.
+*   [user-auth-service](user-auth-service/): Descripción del proyecto user-auth-service.
