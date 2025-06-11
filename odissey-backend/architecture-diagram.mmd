@@ -1,0 +1,9 @@
+graph TD
+    A[Client] -->|GraphQL Queries| B[API Gateway]
+    B -->|Routes Queries| C[User Auth Service]
+    B -->|Routes Queries| D[Future Services]
+    B -->|Fetches Supergraph Schema| E[Schema Registry]
+    C -->|Registers Schema Fragment| E
+    D -->|Registers Schema Fragment| E
+    C -->|Stores User Data| F[PostgreSQL DB]
+    E -->|Stores Schemas| G[PostgreSQL DB]
